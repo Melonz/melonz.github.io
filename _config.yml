@@ -1,0 +1,11 @@
+title: Melonz
+email: support@melonz.nl
+description: Hello! We're Melonz, we make software.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+markdown: kramdown
+highlighter: rouge
+
+sass:
+sass_dir: css

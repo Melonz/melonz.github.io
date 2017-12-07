@@ -1,2 +1,2 @@
 # melonz.github.io
-Our main website.
+The Melonz website
