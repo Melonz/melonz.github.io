@@ -6,8 +6,16 @@
 
     <meta name="description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}">
 
+
+    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Melonz">
     <meta property="og:description" content="{{ page.description | escape }}">
     <meta property="og:image" content="/img/logo.png">
+
+    <meta property="twitter:user" content="@MelonzDev">
+    <meta property="twitter:description" content="{{ page.description | escape }}">
+    <meta property="twitter:image" content="/img/logo.png">
 
     <!-- TODO: Minify & combine these into as few stylesheets as possible -->
     <link href="https://fonts.googleapis.com/css?family=Arimo|Open+Sans" rel="stylesheet">
