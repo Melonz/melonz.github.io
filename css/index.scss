@@ -4,7 +4,9 @@ $fb: 'Open Sans', 'IBM Plex Sans', 'Helvetica', sans-serif;
 $fh: 'Arimo', $fb;
 $orange: #E66900;
 $blue: #378396;
+$blued: #173840;
 $green: #3FB793;
+$greend: #12342a;
 $purple: #35067A;
 $bg: #101010;
 $bgt: rgba(10,10,10,0.8);
@@ -23,17 +25,18 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom, $green 0%,$blue 100%);
+  background-color: $blued;
+    background: linear-gradient(to bottom, $greend 0%,$greend 50%,$blued 100%);
     font-family: $fb;
 }
 
 main {
-    max-width: 61em;
+    max-width: 50em;
     margin: 32px auto 0;
-    background-color: $bgt;
+    // background-color: $bgt;
     color: $fg;
     padding: 1em;
-    border: 2px solid $bg;
+    //border: 2px solid $bg;
     border-radius: 4px;
 }
 
@@ -159,23 +162,23 @@ header {
     }
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    opacity: 0.5;
-    color: $fg;
-    cursor: default;
-    transition: opacity 0.2s;
-
-    a {
-        color: inherit;
-        text-decoration: underline;
-    }
-}
-
-footer:hover {
-    opacity: 1;
-}
+// footer {
+//     position: fixed;
+//     bottom: 0;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     text-align: center;
+//     opacity: 0.5;
+//     color: $fg;
+//     cursor: default;
+//     transition: opacity 0.2s;
+//
+//     a {
+//         color: inherit;
+//         text-decoration: underline;
+//     }
+// }
+//
+// footer:hover {
+//     opacity: 1;
+// }
