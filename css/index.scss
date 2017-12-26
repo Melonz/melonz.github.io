@@ -25,8 +25,10 @@ html {
 }
 
 body {
-  background-color: $blued;
-    background: linear-gradient(to bottom, $greend 0%,$greend 50%,$blued 100%);
+    background-color: $blued;
+    background: linear-gradient(0deg, $greend, $blued);
+    background-size: 400% 400%;
+    animation: gradientbg 19s ease infinite;
     font-family: $fb;
 }
 
@@ -159,14 +161,26 @@ header {
             color: $fg;
             background-color: #9e2812;
         }
-        
+
         a.s-e:hover {
             color: $fg;
             background-color: #e2c545;
         }
     }
 }
+@keyframes gradientbg {
+    0% {
+        background-position: 52% 0;
+    }
 
+    50% {
+        background-position: 49% 100%;
+    }
+
+    100% {
+        background-position: 52% 0;
+    }
+}
 // footer {
 //     position: fixed;
 //     bottom: 0;
