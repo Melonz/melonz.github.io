@@ -62,6 +62,7 @@ h3 {
     a {
         color: inherit;
         text-decoration: inherit;
+        border-bottom: none !important;
     }
 
     a.hash:hover::after {
@@ -109,6 +110,23 @@ a.b:hover {
 .project.hashed {
     border: 1px solid $green;
     border-radius: 2px;
+}
+
+article {
+    a:not(.b) {
+        text-decoration: none;
+        color: $fgl;
+        border-bottom: 1px dotted $blue;
+    }
+
+    a:not(.b):hover {
+        border-bottom: 1px solid $blue;
+    }
+
+    a:not(.b):focus,
+    a:not(.b):visited {
+        border-bottom: 1px solid $green;
+    }
 }
 
 header {

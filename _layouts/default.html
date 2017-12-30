@@ -9,7 +9,15 @@
 
 {% include header.html %}
 
-{{ content }}
+<article>
+  {% if page.center %}
+    <div style="text-align: center;">
+      {{ content }}
+    </div>
+  {% else %}
+    {{ content }}
+  {% endif %}
+</article>
 
 </main>
 
