@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Login
-permalink: /login.php
+permalink: /login.php/
 center: true
 ---
 

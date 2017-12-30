@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Signup
-permalink: /signup.php
+permalink: /signup.php/
 center: true
 ---
 
