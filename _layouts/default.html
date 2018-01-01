@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
 
+<!--
+  .+-      :+.
+  .oo:    :oo.    [][][]    []        [][][]    [][][]    [][][]
+  .o-// `//-o.    []        []        []  []    []  []        []
+  .o. /++/ .o.    [][][]    []        []  []    []  []      []
+  .o.  --  .o.    []        []        []  []    []  []    []
+  .+.      .+.    [][][]    [][][]    [][][]    []  []    [][][]
+  .+.      .+.
+
+  Yeah yeah, the code is messy, we know. Blame the fish.
+
+  Want to improve this {% if page.layout == 'post' %}post{% else %}page{% endif %}? https://github.com/Melonz/melonz.github.io{% if page.path %}/edit/master/{{ page.path }}{% endif %}
+
+  Jekyll {{ jekyll.version }}
+  {{ site.time | date: '%R %m/%d/%Y' }}
+  {{ site.url }}
+-->
+
 {% include head.html %}
 
 <body>
@@ -11,7 +29,14 @@
 
 {% include header.html %}
 
+<aside id="meta">
+  {% if page.ht != true %}<h1>{{ page.title }}</h1>{% endif %}
+  {% if page.layout == 'post' %}<h3>Posted on {{ page.date | date: '%B %d, %Y' }} by {% if page.author %}{{ page.author }}{% else %}a Melonz staff member{% endif %}</h3>{% endif %}
+</aside>
+
+{% if page.layout != 'default' %}
 <article>
+{% endif %}
   {% if page.center %}
     <div style="text-align: center;">
       {{ content }}
@@ -19,7 +44,33 @@
   {% else %}
     {{ content }}
   {% endif %}
+{% if page.layout != 'default'%}
 </article>
+{% endif %}
+
+{% if page.layout == 'post' %}
+{% if page.comments == false %}
+<div id="disqus_thread" style="margin-top: 32px;"></div>
+<script>
+var disqus_config = function () {
+this.page.url = "https://melonz.nl{{ page.url }}"; // Use a Canonical URL
+this.page.identifier = "{{ page.id }}"; // Replace this with your post's identifier
+};
+(function() { // Don't edit anything below this line, except when said to otherwise.
+var d = document, s = d.createElement('script');
+
+s.src = '//melonzblog.disqus.com/embed.js'; // Replace "shortname" with your shortname (e.g myamazingblog.disqus.com)
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+{% else %}
+<h2 style="margin-top: 32px;">Comments have been disabled for this post.</h2>
+{% endif %}
+{% endif %}
+
 
 </main>
 
