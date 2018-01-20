@@ -9,7 +9,7 @@ keywords: july 12, net neutrality, post, melonz, special, fcc
 id: net_neutrality
 badge-text: SPECIAL
 author: TheRandomMelon
-author-link: https://twitter.com/RandomMelonYT
+author-link: https://twitter.com/trmmelon
 desc: Learn why Net Neutrality is important and what you can do to protect it.
 ---
 

@@ -8,7 +8,7 @@ keywords: melonzclient, old, tumblr, post
 id: intro_melonzclient
 author: TheRandomMelon
 comments: true
-author-link: https://twitter.com/RandomMelonYT
+author-link: https://twitter.com/trmmelon
 desc: See what MelonzClient was originally planned to look like.
 ---
 
@@ -59,4 +59,4 @@ This is almost the same as clicking "Melonz Store", however it says "the Setting
 
 The minimize and close buttons are both fully operational.
 
-That's all we have for today! We hope you like our new announcement, and stay tuned for more, here on this blog, and on our Twitter ([@MelonzInc](https://twitter.com/MelonzInc)).
+That's all we have for today! We hope you like our new announcement, and stay tuned for more, here on this blog, and on our Twitter ([@MelonzDev](https://twitter.com/MelonzDev)).
