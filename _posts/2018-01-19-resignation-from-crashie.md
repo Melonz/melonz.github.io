@@ -1,7 +1,7 @@
 ---
 title: Our Official Leave Message for Crashie
 layout: post
-category: Open Letters
+category: open-letter
 comments: true
 keywords: crashie, melonz, melonz leave
 id: leaving_crashie
