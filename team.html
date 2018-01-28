@@ -1,0 +1,47 @@
+---
+title: Team
+description: Meet our team
+layout: default
+permalink: /team/
+ht: true
+---
+
+<div class="row">
+{% for p in site.team %}
+
+<div class="col project" {% if p.username %}id="{{ p.username }}"{% endif %}>
+    <img src="{% if p.image %}{{ p.image }}{% else %}{% endif %}" class="pi" alt="">
+    <h2>{{ p.title }} {% if p.username %}({{ p.username }}){% endif %}</h2>
+    <h3>{{ p.content | truncate: 50 }} <a href="{{ p.url }}" title="Read more about {% if p.title %}{{ p.title }}{% else %}{{ p.username }}{% endif %}">&raquo;</a></h3>
+    <h3>
+      {% if p.website %}
+        <a href="{{ p.website }}" style="border: none;" class="b"><i class="fas fa-globe fa-fw"></i></a>
+      {% endif %}
+
+      {% if p.youtube %}
+        <a href="{{ p.youtube }}" style="border: none;" class="b"><i class="fab fa-youtube fa-fw"></i></a>
+      {% endif %}
+
+      {% if p.twitter %}
+        <a href="{{ p.twitter }}" style="border: none;" class="b"><i class="fab fa-twitter fa-fw"></i></a>
+      {% endif %}
+
+      {% if p.github %}
+        <a href="{{ p.github }}" style="border: none;" class="b"><i class="fab fa-github fa-fw"></i></a>
+      {% endif %}
+  </h3>
+</div>
+
+{% capture mod %}
+{{ forloop.index | modulo: 2 | times: 1 }}
+{% endcapture %}
+
+<!-- {{ mod }} -->
+
+{% if mod contains '0' %}
+</div>
+<div class="row">
+{% endif %}
+
+{% endfor %}
+</div>

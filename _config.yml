@@ -10,3 +10,7 @@ highlighter: rouge
 
 sass:
 sass_dir: css
+
+collections:
+  team:
+    output: true

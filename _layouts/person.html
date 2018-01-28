@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div style="text-align: center;">
+
+  {% if page.username %}
+    <h2 style="margin-top: 4px;">{{ page.username }}</h2>
+  {% endif %}
+
+  <h3 style="margin-top: 4px; margin-bottom: 16px;">
+    {% if page.website %}
+      <a href="{{ page.website }}" style="border: none;"><i class="fas fa-globe fa-fw"></i></a>
+    {% endif %}
+
+    {% if page.youtube %}
+      <a href="{{ page.youtube }}" style="border: none;"><i class="fab fa-youtube fa-fw"></i></a>
+    {% endif %}
+
+    {% if page.twitter %}
+      <a href="{{ page.twitter }}" style="border: none;"><i class="fab fa-twitter fa-fw"></i></a>
+    {% endif %}
+
+    {% if page.github %}
+      <a href="{{ page.github }}" style="border: none;"><i class="fab fa-github fa-fw"></i></a>
+    {% endif %}
+  </h3>
+
+  {% if page.image %}
+      <img src="{{ page.image }}" alt="Avatar" style="max-width: 50%; border-radius: 6px;">
+  {% endif %}
+
+  {% if content%}
+    <p>{{ content }}</p>
+  {% endif %}
+
+</div>
