@@ -1,5 +1,5 @@
 ---
-title: Our Official Leave Message for Crashie
+title: We're leaving Crashie
 layout: post
 category: open-letter
 comments: true
