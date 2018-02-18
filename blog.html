@@ -4,13 +4,24 @@ title: Blog
 permalink: /blog/
 ---
 
-<div style="max-width: 35em; margin: 0 auto;">
-  {% for p in site.posts %}
+<div class="row">
+{% for p in site.posts %}
 
-    <div class="l">
-      <h3><a href="{{ p.url }}">{{ p.title }}</a></h3>
-      <h5>Posted on {{ p.date | date: '%B %d, %Y' }} by {{ p.author }}</h5>
-    </div>
+<div class="col project" style="margin: 0.2rem;">
+    <h2 style="font-size: 1.3em;"><a href="{{ p.url }}">{{ p.title }}</a></h2>
+    <h3 style="opacity: 0.6; color: #eee; font-size: 0.9em;">Posted on {{ p.date | date: '%B %d, %Y' }} by {{ p.author }}</h3>
+</div>
 
-  {% endfor %}
+{% capture mod %}
+{{ forloop.index | modulo: 2 | times: 1 }}
+{% endcapture %}
+
+<!-- {{ mod }} -->
+
+{% if mod contains '0' %}
+</div>
+<div class="row">
+{% endif %}
+
+{% endfor %}
 </div>
