@@ -15,31 +15,31 @@ $fg: #eeeeee;
 $fgl: #ededed;
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    width: 100%;
-    min-height: 100%;
+  width: 100%;
+  min-height: 100%;
 }
 
 body {
-    background-color: $blued;
-    background: linear-gradient(0deg, $greend, $blued);
-    background-size: 400% 400%;
-    animation: gradientbg 19s ease infinite;
-    font-family: $fb;
+  background-color: $blued;
+  background: linear-gradient(0deg, $greend, $blued);
+  background-size: 400% 400%;
+  animation: gradientbg 19s ease infinite;
+  font-family: $fb;
 }
 
 main {
-    max-width: 50em;
-    margin: 32px auto 0;
-    // background-color: $bgt;
-    color: $fg;
-    padding: 1em;
-    //border: 2px solid $bg;
-    border-radius: 4px;
+  max-width: 50em;
+  margin: 32px auto 0;
+  // background-color: $bgt;
+  color: $fg;
+  padding: 1em;
+  //border: 2px solid $bg;
+  border-radius: 4px;
 }
 
 h1,
@@ -47,255 +47,260 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: $fh;
+  font-family: $fh;
 }
 
 h1,
 h2,
 h3 {
-    color: $fgl;
+  color: $fgl;
 
-    a {
-        color: inherit;
-        text-decoration: inherit;
-        border-bottom: none !important;
-    }
+  a {
+    color: inherit;
+    text-decoration: inherit;
+    border-bottom: none !important;
+  }
 
-    a.hash:hover::after {
-        content: ' #';
-        font-family: monospace;
-    }
+  a.hash:hover::after {
+    content: ' #';
+    font-family: monospace;
+  }
 }
 
 a.b {
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    color: $blue;
-    padding: 4px;
-    margin-right: 4px;
-    // font-size: 1.1em;
-    // background-color: $bgl;
-    border-radius: 2px;
-    transition: color 0.1s;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: $blue;
+  padding: 4px;
+  margin-right: 4px;
+  // font-size: 1.1em;
+  // background-color: $bgl;
+  border-radius: 2px;
+  transition: color 0.1s;
 }
 
 a.b:hover {
-    color: $green;
+  color: $green;
 }
 
 .project {
-    img {
-        width: 5em;
-        opacity: 0.9;
-        border-radius: 4px;
-        float: left;
-        margin-right: 8px;
-    }
+  img {
+    width: 5em;
+    opacity: 0.9;
+    border-radius: 4px;
+    float: left;
+    margin-right: 8px;
+  }
 
-    p {
-        text-align: left;
-    }
+  p {
+    text-align: left;
+  }
 
-    h3 {
-        margin-bottom: 4px;
-        font-size: 1.1em;
-    }
+  h3 {
+    margin-bottom: 4px;
+    font-size: 1.1em;
+  }
 }
 
 .project.hashed {
-    border: 1px solid $green;
-    border-radius: 2px;
+  border: 1px solid $green;
+  border-radius: 2px;
 }
 
 a:not(.b):not(.s) {
-    text-decoration: none;
-    color: $fgl;
-    border-bottom: 1px dotted $blue;
+  text-decoration: none;
+  color: $fgl;
+  border-bottom: 1px dotted $blue;
 }
 
 a:not(.b):not(.s):hover {
-    border-bottom: 1px solid $blue;
+  border-bottom: 1px solid $blue;
 }
 
 a:not(.b):not(.s):focus,
 a:not(.b):not(.s):visited {
-    border-bottom: 1px solid $green;
+  border-bottom: 1px solid $green;
 }
 
 article {
-    h1,
-    h2,
-    h3 {
-        text-align: center;
-        margin-top: 32px;
-    }
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    margin-top: 32px;
+  }
 
-    p {
-      margin: 4px 0;
-    }
+  p {
+    margin: 4px 0;
+  }
 
-    ul {
-        list-style: square;
-    }
+  ul {
+    list-style: square;
+  }
 
-    li {
-        margin-left: 20px;
-    }
+  li {
+    margin-left: 20px;
+  }
 
-    img:not(.pi) {
-        display: block;
-        margin: 8px auto;
-        max-width: 100%;
-    }
+  img:not(.pi) {
+    display: block;
+    margin: 8px auto;
+    max-width: 100%;
+  }
 }
 
 header {
-    div#melonz-logotype {
-        background-image: url('/img/logotype.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        height: 8em;
+  div#melonz-logotype {
+    background-image: url('/img/logotype.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 8em;
+  }
+
+  div#social {
+    text-align: center;
+
+    a {
+      text-align: left;
+      display: inline-block;
+      color: $fg;
+      // background-color: none;a
+      width: 50px;
+      padding: 0 4px;
+      margin: 4px;
+      font-size: 1.3em;
+      transition: all 0.3s;
+      border-radius: 4px;
     }
 
-    div#social {
-        text-align: center;
-
-        a {
-            text-align: left;
-            display: inline-block;
-            color: $fg;
-            // background-color: none;a
-            width: 50px;
-            padding: 0 4px;
-            margin: 4px;
-            font-size: 1.3em;
-            transition: all 0.3s;
-            border-radius: 4px;
-        }
-
-        a:hover {
-            color: $bg;
-        }
-
-        a.s-f:hover {
-            color: $fg;
-            background-color: #3b5998;
-        }
-
-        a.s-t:hover {
-            background-color: #1da1f2;
-        }
-
-        a.s-g:hover {
-            background-color: #6cc644;
-        }
-        
-        a.s-s:hover {
-            background-color: #e36f64;
-        }
-
-        a.s-d:hover {
-            background-color: #7289da;
-        }
-
-        a.s-u:hover {
-            background-color: $orange;
-        }
-
-        a.s-b:hover {
-            color: $fg;
-            background-color: #9e2812;
-        }
-        
-        a.s-w:hover {
-            background-color: #00ca36;
-        }
-
-        a.s-e:hover {
-            color: $fg;
-            background-color: #e2c545;
-        }
+    a:hover {
+      color: $bg;
     }
+
+    a.s-f:hover {
+      color: $fg;
+      background-color: #3b5998;
+    }
+
+    a.s-t:hover {
+      background-color: #1da1f2;
+    }
+
+    a.s-g:hover {
+      background-color: #6cc644;
+    }
+
+    a.s-s:hover {
+      background-color: #e36f64;
+    }
+
+    a.s-d:hover {
+      background-color: #7289da;
+    }
+
+    a.s-u:hover {
+      background-color: $orange;
+    }
+
+    a.s-b:hover {
+      color: $fg;
+      background-color: #9e2812;
+    }
+
+    a.s-w:hover {
+      background-color: #00ca36;
+    }
+
+    a.s-e:hover {
+      color: $fg;
+      background-color: #e2c545;
+    }
+  }
 }
 
 div.l {
-    font-size: 1.1em;
-    margin-bottom: 16px;
+  font-size: 1.1em;
+  margin-bottom: 16px;
 
-    h5 {
-        opacity: 0.6;
-        color: $fg;
-    }
+  h5 {
+    opacity: 0.6;
+    color: $fg;
+  }
 }
 
 aside#meta {
-    text-align: center;
-    margin-bottom: 16px;
+  text-align: center;
+  margin-bottom: 16px;
 
-    h1 {
-        font-size: 2em;
-        margin-top: 32px;
-    }
+  h1 {
+    font-size: 2em;
+    margin-top: 32px;
+  }
 
-    h3 {
-        margin-top: 2px;
-        font-size: 1.2em;
-    }
+  h3 {
+    margin-top: 2px;
+    font-size: 1.2em;
+  }
 }
 
 a#edit {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 2em;
-    background-color: $blue;
-    color: $fgl;
-    border-bottom-left-radius: 4px;
-    padding: 8px;
-    font-size: 2em;
-    transition: all 0.3s;
-    transform: translateY(-1em);
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 2em;
+  background-color: $blue;
+  color: $fgl;
+  border-bottom-left-radius: 4px;
+  padding: 8px;
+  font-size: 2em;
+  transition: all 0.3s;
+  transform: translateY(-1em);
 }
 
 a#edit .fa {
-    display: inline-block;
-    position: relative;
-    top: 0.75em;
+  display: inline-block;
+  position: relative;
+  top: 0.75em;
 }
 
 a#edit:hover {
-    transform: translateY(0px);
-    background-color: $green;
+  transform: translateY(0px);
+  background-color: $green;
 }
 // a#edit:focus {
 //     border-bottom-left-radius: 16px;
 // }
 @media screen and (max-width: 768px) {
-    a#edit {
-        display: none;
-    }
-    header a {
+  a#edit {
+    display: none;
+  }
+
+  header {
+    div#social {
+      a {
         display: inline-block;
         width: 100%;
         text-align: center;
-        padding: 2px 2px 2px 2px;
+        padding: 2px;
+      }
     }
+  }
 }
 @keyframes gradientbg {
-    0% {
-        background-position: 52% 0;
-    }
+  0% {
+    background-position: 52% 0;
+  }
 
-    50% {
-        background-position: 49% 100%;
-    }
+  50% {
+    background-position: 49% 100%;
+  }
 
-    100% {
-        background-position: 52% 0;
-    }
+  100% {
+    background-position: 52% 0;
+  }
 }
 // footer {
 //     position: fixed;
