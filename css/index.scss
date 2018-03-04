@@ -277,6 +277,12 @@ a#edit:hover {
     a#edit {
         display: none;
     }
+    header a {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 2px 2px 2px 2px;
+    }
 }
 @keyframes gradientbg {
     0% {
