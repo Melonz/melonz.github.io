@@ -19,4 +19,4 @@ My fellow patrons. As your leader and commander in chief, it is with a heavy hea
 
 # if you couldn't tell this is April Fools mate
 
-I'd never surrender, fuck them
+I don't want to sell.
