@@ -8,4 +8,4 @@ twitter: https://twitter.com/mrdnomaid
 github: https://github.com/mrdnomaid
 ---
 
-Tom is a web developer here at Melonz. He may or may not be a real fish
+Web Developer(ish). Chief organiser. Decent server manager.
