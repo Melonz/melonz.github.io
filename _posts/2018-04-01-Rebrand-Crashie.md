@@ -1,5 +1,5 @@
 ---
-title: We're rebranding to Crashie. (A Deal)
+title: Crashie Rebrand (A Deal)
 layout: post
 category: open-letter
 comments: true

@@ -7,4 +7,4 @@ website: https://sonichack.fun/thirstymike
 twitter: https://twitter.com/SonicHackYT
 ---
 
-butan smashing enthusiast. supreme overlord numero dos at melonz
+All-mighty co-leader

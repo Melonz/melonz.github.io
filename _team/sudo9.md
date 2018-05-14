@@ -7,4 +7,4 @@ website: http://sudo9sworld.neocities.org
 twitter: https://twitter.com/sudo9mus
 ---
 
-The Sound Man with a Master Plan™ (Musician)
+Sound guy

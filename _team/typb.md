@@ -7,4 +7,4 @@ youtube: https://youtube.com/TheYellowPolarBear
 twitter: https://twitter.com/typbyt
 ---
 
-Nintendo YouTube with over 1K subscribers and the Melonz Video Editor
+Videos and that

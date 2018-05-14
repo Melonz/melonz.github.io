@@ -14,6 +14,12 @@ $bgl: #202020;
 $fg: #eeeeee;
 $fgl: #ededed;
 
+@mixin anibackground($trans) {
+  background: linear-gradient(0deg, #{$greend}#{$trans}, #{$blued}#{$trans});
+  background-size: 400% 400%;
+  animation: gradientbg 19s ease infinite;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -25,10 +31,7 @@ html {
 }
 
 body {
-  background-color: $blued;
-  background: linear-gradient(0deg, $greend, $blued);
-  background-size: 400% 400%;
-  animation: gradientbg 19s ease infinite;
+  background-color: $bg;
   font-family: $fb;
 }
 
@@ -103,6 +106,13 @@ a.b:hover {
   }
 }
 
+.project:not(.blog) {
+  @include anibackground('55');
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px #{$fgl}22;
+}
+
 .project.hashed {
   border: 1px solid $green;
   border-radius: 2px;
@@ -151,15 +161,30 @@ article {
 }
 
 header {
-  div#melonz-logotype {
-    background-image: url('/img/logotype.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 8em;
+  // position: fixed;
+  // bottom: 0;
+  // left: 0;
+  width: 100%;
+  text-align: center;
+  @include anibackground('aa');
+  padding: 0px 2px 30px 2px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px #{$fgl}33;
+
+  a#melonz-logotype {
+    border-bottom: none;
+    text-decoration: none;
+    display: inline;
+
+    img {
+      position: relative;
+      top: 1.5em;
+      height: 5em;
+    }
   }
 
   div#social {
+    display: inline;
     text-align: center;
 
     a {
@@ -167,17 +192,27 @@ header {
       display: inline-block;
       color: $fg;
       // background-color: none;a
-      width: 50px;
-      padding: 0 4px;
+      // width: 50px;
+      padding: 4px;
       margin: 4px;
+      text-decoration: none;
       font-size: 1.3em;
       transition: all 0.3s;
-      border-radius: 4px;
+      // border-radius: 4px;
     }
 
     a:hover {
       color: $bg;
     }
+
+    a.s-f,
+    a.s-t,
+    a.s-g,
+    a.s-s,
+    a.s-d {
+      margin: 0 -2px;
+    }
+
 
     a.s-f:hover {
       color: $fg;
@@ -287,6 +322,11 @@ a#edit:hover {
         padding: 2px;
       }
     }
+  }
+
+  .project {
+    position: relative;
+    left: -8px;
   }
 }
 @keyframes gradientbg {

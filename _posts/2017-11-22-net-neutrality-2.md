@@ -1,5 +1,5 @@
 ---
-title: Why Net Neutrality is Important [Revised]
+title: Net Neutrality - it's important (2.0)
 layout: post
 category: special
 image: net_neutrality/square.png

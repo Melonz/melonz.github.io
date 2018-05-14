@@ -7,4 +7,4 @@ youtube: https://www.youtube.com/channel/UCAFEbaDHzUyigB-ZemiiRSw
 twitter: https://twitter.com/superviolabro
 ---
 
-Amateur artist, musician, A/V designer, etc.
+Music and video stuff

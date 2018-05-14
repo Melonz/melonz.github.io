@@ -8,4 +8,4 @@ twitter: https://twitter.com/mrdnomaid
 github: https://github.com/mrdnomaid
 ---
 
-Web Developer(ish). Chief organiser. Decent server manager.
+Official Melonz fish

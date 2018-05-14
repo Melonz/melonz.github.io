@@ -7,7 +7,7 @@ permalink: /blog/
 <div class="row">
 {% for p in site.posts %}
 
-<div class="col project" style="margin: 0.2rem;">
+<div class="col project blog" style="margin: 0.2rem; margin-bottom: 32px;">
     <h2 style="font-size: 1.3em;"><a href="{{ p.url }}">{{ p.title }}</a></h2>
     <h3 style="opacity: 0.6; color: #eee; font-size: 0.9em;">Posted on {{ p.date | date: '%B %d, %Y' }} by {{ p.author }}</h3>
 </div>
